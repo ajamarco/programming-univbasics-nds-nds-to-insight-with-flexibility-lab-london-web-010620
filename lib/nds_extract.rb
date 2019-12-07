@@ -83,11 +83,7 @@ def movies_with_directors_set(source)
   new_array = []
   source.length.times do |index|
     source[index][:movies].length.times do |movies_index|
-      movie_hash = {}
-      movie_hash[:director_name] = source[index][:name]
-      movie = source[index][:movies][movies_index][:title]
-      movie_hash[:title] = movie
-      new_array.push([movie_hash])
+      new_hash = movies_with_director_names()
     end 
   end
   new_array
