@@ -28,7 +28,7 @@ end
 def movies_with_directors_set(source)
   new_array = []
   source.length.times do |index|
-    puts source
+    puts source[index][:diretor]
   end
   new_array
 end
