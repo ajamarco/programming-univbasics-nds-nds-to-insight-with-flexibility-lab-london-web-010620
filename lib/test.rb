@@ -25,5 +25,17 @@ def movies_with_director_key(name, movies_collection)
   puts data 
 end
 
+def movies_with_directors_set(source)
+  new_array = []
+  source.length.times do |index|
+    source[index][:movies].length.times do |movies_index|
+      new_hash = movies_with_director_names(source[index][:director_name], source[index][:movies])
+      puts new_hash
+      break
+    end 
+  end
+  new_array
+end
+
 hash = {:name=>"Martin Scorsese", :movies=>[{:title=>"The Departed", :studio=>"Warner Brothers", :worldwide_gross=>132384315, :release_year=>2006}, {:title=>"Shutter Island", :studio=>"Paramount", :worldwide_gross=>128012934, :release_year=>2010}, {:title=>"The Wolf of Wall Street", :studio=>"Paramount", :worldwide_gross=>116900694, :release_year=>2013}, {:title=>"The Aviator", :studio=>"Miramax", :worldwide_gross=>102610330, :release_year=>2004}, {:title=>"Cape Fear", :studio=>"Universal", :worldwide_gross=>79091969, :release_year=>1991}, {:title=>"Gangs of New York", :studio=>"Miramax", :worldwide_gross=>77812000}]}
-movies_with_director_key(hash[:name],hash[:movies])
+movies_with_directors_set(hash)
