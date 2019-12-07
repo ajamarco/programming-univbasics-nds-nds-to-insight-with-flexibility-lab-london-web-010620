@@ -26,7 +26,6 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def movies_with_directors_set(source)
-  puts source
   source.length.times do |index|
     puts "AGORA IMPRIMINDO O MALDITO INDEX #{index}"
     puts source[index]
