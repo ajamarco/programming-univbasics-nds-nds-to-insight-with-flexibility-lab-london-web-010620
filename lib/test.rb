@@ -28,7 +28,7 @@ end
 def movies_with_directors_set(source)
   source.length.times do |index|
     puts "AGORA IMPRIMINDO O MALDITO INDEX #{index}"
-    puts source[index]
+    pp source[index]
   end
 end
 
