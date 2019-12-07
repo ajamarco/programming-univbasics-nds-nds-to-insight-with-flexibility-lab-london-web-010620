@@ -28,6 +28,7 @@ end
 def movies_with_directors_set(source)
   source.each do |key, value|
     puts "The hash key is #{key} and the value is #{value}."
+    source[key]
   end
 end
 
