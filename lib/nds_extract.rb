@@ -84,8 +84,8 @@ def movies_with_directors_set(source)
   source.length.times do |index|
     source[index][:movies].length.times do |movies_index|
       new_hash = movies_with_director_names(source[index][:director_name], source[index][:movies])
-      puts new_hash
-      break
+      
+
     end 
   end
   new_array
