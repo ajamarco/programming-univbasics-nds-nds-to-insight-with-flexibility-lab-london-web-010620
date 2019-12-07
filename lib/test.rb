@@ -26,7 +26,7 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def movies_with_directors_set(source)
-  business.each do |key, value|
+  source.each do |key, value|
     puts "The hash key is #{key} and the value is #{value}."
   end
 end
