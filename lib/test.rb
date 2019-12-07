@@ -28,7 +28,7 @@ end
 def movies_with_directors_set(source)
   puts source
   source.length.times do |index|
-    puts index
+    puts source[index]
   end
 end
 
